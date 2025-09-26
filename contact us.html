@@ -4,34 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cathel Photography | Contact Us </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/Logo.jpg">
 </head>
 
 <body>
-    <div class="logo">
-        <img src="images/Logo.jpg" alt="Cathel Photography Logo" style="width: 200px; height: 200px;">
-    </div>
-        <nav>
+    <header>
+        
+        <!--The following code is for the navigation and logo layout-->
+
+        <nav class=" nav -left">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
+        </nav>
+
+        <div class="logo">
+            <img src="images/Logo.jpg" alt="Cathel Photography Logo" >
+        </div>
+
+        <nav class="nav- right">
             <a href="Services.html">Services</a>
             <a href="enquire.html">Enquire</a>
             <a href="contact us.html">Contact Us</a>
         </nav>
+        </header>
     
-    <main class="Contact Page">
+    <main class="Contact_Page">
         <h2>
-            Who Can You Reach Us
+            How Can You Reach Us
         </h2>
+        
+        <div class="surrounding_frame" >
         <p>
             Email: cathelphotography@gmail.com
         </p>
+        </div>
+
+        <div class="surrounding_frame" >
         <p>
             Contact numbers: 0678957477
         </p>
+        </div>
+
+        <div class="surrounding_frame" >
         <p>
             Location: Shop 7, Norkem Corner, Norkem Park, Kempton Park, 1618
         </p>
+        </div>
+        
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d461.20322524373864!2d28.219772855394787!3d-26.06298839477106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956b44ab35409f%3A0x35f9cab2fefdf792!2sNorkem%20Corner!5e0!3m2!1sen!2sza!4v1756379326328!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h2>Send Us A Message</h2>
+
+
+        <form class="form" action="#" method="post">
+
+            <label for="FirstName">First Name</label>
+            <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name" required>
+
+            <label for="LastName">Surname</label>
+            <input type="text" id="LastName" name="LastName" placeholder="Enter your surname" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+            <button type="send">Send message</button>
+
+        </form>
 
 
 
