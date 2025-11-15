@@ -1,0 +1,25 @@
+{
+  "name": "st10478144_mitchell-qhobela_-wede5020w_poe",
+  "version": "1.0.0",
+  "description": "Cathel Photography Website\r ##### Student Information\r ST10478144- Mitchell Qhobela\r ##### Project overview\r CATHEL Photography was established in November 2020. The business began as a portrait/street \r and events photography business. Over the years CATHEL Photography began to expand its niche \r and venture into food / product photography. The business aspires to become one of the award\r winning photography businesses. CATHEL Photography's mission is to create art using only a \r camera and an object. The target market of this business is the product, food and family, model \r and events industry. \r ##### Website Goals and Objectives\r 1. Increase website engagement (Low, 2025) \r 2. Increase social media platform following, likes and shares (Low, 2025) \r 3. Evolve the quality of information and content (Low, 2025)\r ##### Key Features and Functionality\r - Home Page \r Information of what CATHEL Photography offers. Pictures to give a sense of quality \r of what the business has done and can do. Home page must connect to the other \r pages.  \r - About Us Page \r Provide the history business and all the employees of the business and their roles, \r location of the business. \r - Services \r Packages to consider and broken down into different categories, i.e., studio \r portraits, product photography. A portfolio of previous projects will be the centre of \r this page. This will persuade the clients by giving them a sense of quality the \r business offers \r - Contact Us \r All contact information, i.e., Email, telephone numbers, location etc.\r ## Part 1 and 2 Details\r - Basic HTML Code for the website,i.e., headers, navigations, body, images added etc.\r ##### From Part 1 into 2, Changes Made\r - New website styling of the HTML code using CSS\r - Website Responsiveness\r - Added Comments.\r ## Reference List\r - w3schools, 2025. HMTL <form> tag. [Online]. Available at: https://www.w3schools.com/tags/tag_form.asp [ Accessed 24 September 2025].\r - Leigh Benson Photography, 2025. Johannesburg Wedding and Portrait Photographer. [Online]. Available at: https://leighbensonphotography.com/ [ Accessed 24 September 2025].\r - Hay Kay Photography, 2025. Welcome to HayKay Photography. [Online]. Available at: https://haykay.co.za/ [ Accessed 24 September 2025].\r - Low, D., 2025. 13 Website Goals to Set and Focus On. [Online]. Available at: \r https://www.bitcatcha.com/manage-website/goals/ [Accessed 29 July 2025].",
+  "main": "JScript.js",
+  "scripts": {
+    "release" : "standard-version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/issues"
+  },
+  "homepage": "https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE#readme",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
