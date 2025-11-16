@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/compare/v1.1.0...v1.2.0) (2025-11-16)
+
+
+### Features
+
+* new javascript google map interaction coded ([cacc44c](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/commit/cacc44ccf7fe44fc6699a001cf5e67e8fcac3a24))
+
 ## [1.1.0](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/compare/v1.0.0...v1.1.0) (2025-11-15)
 
 
