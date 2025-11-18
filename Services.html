@@ -42,59 +42,129 @@
             
             
             <div class="main_content_pictures">
-            <h3> 
-                The Grace Foundation Christmas Charity Drive 
-            </h3>
-                <div class="TGF_imgs">
-                <img src="images/HCD Christmas Pic 1.jpg" alt="Grace Foundation Christmas Charity Drive" >
-                <img src="images/HCD Christmas Pic 2.jpg" alt="Grace Foundation Christmas Charity Drive" >
-                <img src="images/HCD Christmas Pic 3.jpg" alt="Grace Foundation Christmas Charity Drive" >
-                <img src="images/HCD Christmas Pic 4.jpg" alt="Grace Foundation Christmas Charity Drive" >
-                <img src="images/HCD Christmas Pic 5.jpg" alt="Grace Foundation Christmas Charity Drive" >
-                <img src="images/HCD Christmas Pic 6.jpg" alt="Grace Foundation Christmas Charity Drive" >
-                <img src="images/HCD Christmas Pic 7.jpg" alt="Grace Foundation Christmas Charity Drive" >
-                <img src="images/HCD Christmas Pic 8.jpg" alt="Grace Foundation Christmas Charity Drive" >
-                 </div>
-            <h3>
-                Portraits
-            </h3>
-                <div class="five_star">
-                <img src="images/5 Stardagger pic 1.jpg" alt="5 Stardagger Portait Photos" >
-                <img src="images/5 Stardagger pic 2.png" alt="5 Stardagger Portait Photos" >
-                <img src="images/5 Stardagger pic 3.png" alt="5 Stardagger Portait Photos" >
-                <img src="images/5 Stardagger pic 4.png" alt="5 Stardagger Portait Photos" >
+                <h3>The Grace Foundation Christmas Charity Drive</h3>
+                <div class="gallery-row" id="christmas-gallery">
+                    <div class="gallery-column"><img src="images/HCD Christmas Pic 1.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(1)"></div>
+                    <div class="gallery-column"><img src="images/HCD Christmas Pic 2.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(2)"></div>
+                    <div class="gallery-column"><img src="images/HCD Christmas Pic 3.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(3)"></div>
+                    <div class="gallery-column"><img src="images/HCD Christmas Pic 4.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(4)"></div>
+                    <div class="gallery-column"><img src="images/HCD Christmas Pic 5.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(5)"></div>
+                    <div class="gallery-column"><img src="images/HCD Christmas Pic 6.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(6)"></div>
+                    <div class="gallery-column"><img src="images/HCD Christmas Pic 7.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(7)"></div>
+                    <div class="gallery-column"><img src="images/HCD Christmas Pic 8.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(8)"></div>
                 </div>
-                <h3>
-                Food/Products
-            </h3>
-                <div class="food_imgs">
-                <img src="images/Food Photography 1.jpg" alt="Food/products by Cathel Photography" >
-                <img src="images/Food Photography 2.jpg" alt="Food/products by Cathel Photography" >
-                <img src="images/Food Photography 3.jpg" alt="Food/products by Cathel Photography" >
-                <img src="images/Food Photography 14.jpg"alt="Food/products by Cathel Photography" >
+            
+                <!-- Portraits Gallery -->
+                <h3>Portraits</h3>
+                <div class="gallery-row" id="portraits-gallery">
+                    <div class="gallery-column"><img src="images/5 Stardagger pic 1.jpg" alt="Portrait 1" onclick="openModalPortrait();currentSlidePortrait(1)"></div>
+                    <div class="gallery-column"><img src="images/5 Stardagger pic 2.png" alt="Portrait 2" onclick="openModalPortrait();currentSlidePortrait(2)"></div>
+                    <div class="gallery-column"><img src="images/5 Stardagger pic 3.png" alt="Portrait 3" onclick="openModalPortrait();currentSlidePortrait(3)"></div>
+                    <div class="gallery-column"><img src="images/5 Stardagger pic 4.png" alt="Portrait 4" onclick="openModalPortrait();currentSlidePortrait(4)"></div>
+                </div>
+            
+                <!-- Food/Products Gallery -->
+                <h3>Food/Products</h3>
+                <div class="gallery-row" id="food-gallery">
+                    <div class="gallery-column"><img src="images/Food Photography 1.jpg" alt="Food 1" onclick="openModalFood();currentSlideFood(1)"></div>
+                    <div class="gallery-column"><img src="images/Food Photography 2.jpg" alt="Food 2" onclick="openModalFood();currentSlideFood(2)"></div>
+                    <div class="gallery-column"><img src="images/Food Photography 3.jpg" alt="Food 3" onclick="openModalFood();currentSlideFood(3)"></div>
+                    <div class="gallery-column"><img src="images/Food Photography 14.jpg" alt="Food 4" onclick="openModalFood();currentSlideFood(4)"></div>
+                </div>
+            </main>
+            
+            <!-- Modals -->
+            <!-- TGF Modal -->
+            <div id="modalTGF" class="modal">
+                <span class="close" onclick="closeModalTGF()">&times;</span>
+                <div class="lightbox-content">
+                    <div class="TGFslides"><img src="images/HCD Christmas Pic 1.jpg" alt="Grace Foundation Christmas Charity Drive"></div>
+                    <div class="TGFslides"><img src="images/HCD Christmas Pic 2.jpg" alt="Grace Foundation Christmas Charity Drive"></div>
+                    <div class="TGFslides"><img src="images/HCD Christmas Pic 3.jpg" alt="Grace Foundation Christmas Charity Drive"></div>
+                    <div class="TGFslides"><img src="images/HCD Christmas Pic 4.jpg" alt="Grace Foundation Christmas Charity Drive"></div>
+                    <div class="TGFslides"><img src="images/HCD Christmas Pic 5.jpg" alt="Grace Foundation Christmas Charity Drive"></div>
+                    <div class="TGFslides"><img src="images/HCD Christmas Pic 6.jpg" alt="Grace Foundation Christmas Charity Drive"></div>
+                    <div class="TGFslides"><img src="images/HCD Christmas Pic 7.jpg" alt="Grace Foundation Christmas Charity Drive"></div>
+                    <div class="TGFslides"><img src="images/HCD Christmas Pic 8.jpg" alt="Grace Foundation Christmas Charity Drive"></div>
+                    <a class="prev" onclick="plusSlidesTGF(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlidesTGF(1)">&#10095;</a>
+                    <div class="caption-container"><p id="captionTGF"></p></div>
+                    <div class="thumbnail-row">
+                        <img class="demoTGF" src="images/HCD Christmas Pic 1.jpg" onclick="currentSlideTGF(1)" alt="Grace Foundation Christmas Charity Drive">
+                        <img class="demoTGF" src="images/HCD Christmas Pic 2.jpg" onclick="currentSlideTGF(2)" alt="Grace Foundation Christmas Charity Drive">
+                        <img class="demoTGF" src="images/HCD Christmas Pic 3.jpg" onclick="currentSlideTGF(3)" alt="Grace Foundation Christmas Charity Drive">
+                        <img class="demoTGF" src="images/HCD Christmas Pic 4.jpg" onclick="currentSlideTGF(4)" alt="Grace Foundation Christmas Charity Drive">
+                        <img class="demoTGF" src="images/HCD Christmas Pic 5.jpg" onclick="currentSlideTGF(5)" alt="Grace Foundation Christmas Charity Drive">
+                        <img class="demoTGF" src="images/HCD Christmas Pic 6.jpg" onclick="currentSlideTGF(6)" alt="Grace Foundation Christmas Charity Drive">
+                        <img class="demoTGF" src="images/HCD Christmas Pic 7.jpg" onclick="currentSlideTGF(7)" alt="Grace Foundation Christmas Charity Drive">
+                        <img class="demoTGF" src="images/HCD Christmas Pic 8.jpg" onclick="currentSlideTGF(8)" alt="Grace Foundation Christmas Charity Drive">
+                    </div>
                 </div>
             </div>
+            
+            <!-- Portrait Modal -->
+            <div id="modalPortrait" class="modal">
+                <span class="close" onclick="closeModalPortrait()">&times;</span>
+                <div class="lightbox-content">
+                    <div class="PortraitSlides"><img src="images/5 Stardagger pic 1.jpg" alt="Portrait 1"></div>
+                    <div class="PortraitSlides"><img src="images/5 Stardagger pic 2.png" alt="Portrait 2"></div>
+                    <div class="PortraitSlides"><img src="images/5 Stardagger pic 3.png" alt="Portrait 3"></div>
+                    <div class="PortraitSlides"><img src="images/5 Stardagger pic 4.png" alt="Portrait 4"></div>
+                    <a class="prev" onclick="plusSlidesPortrait(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlidesPortrait(1)">&#10095;</a>
+                    <div class="caption-container"><p id="captionPortrait"></p></div>
+                    <div class="thumbnail-row">
+                        <img class="demoPortrait" src="images/5 Stardagger pic 1.jpg" onclick="currentSlidePortrait(1)" alt="Portrait 1">
+                        <img class="demoPortrait" src="images/5 Stardagger pic 2.png" onclick="currentSlidePortrait(2)" alt="Portrait 2">
+                        <img class="demoPortrait" src="images/5 Stardagger pic 3.png" onclick="currentSlidePortrait(3)" alt="Portrait 3">
+                        <img class="demoPortrait" src="images/5 Stardagger pic 4.png" onclick="currentSlidePortrait(4)" alt="Portrait 4">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Food Modal -->
+            <div id="modalFood" class="modal">
+                <span class="close" onclick="closeModalFood()">&times;</span>
+                <div class="lightbox-content">
+                    <div class="FoodSlides"><img src="images/Food Photography 1.jpg" alt="Food 1"></div>
+                    <div class="FoodSlides"><img src="images/Food Photography 2.jpg" alt="Food 2"></div>
+                    <div class="FoodSlides"><img src="images/Food Photography 3.jpg" alt="Food 3"></div>
+                    <div class="FoodSlides"><img src="images/Food Photography 14.jpg" alt="Food 4"></div>
+                    <a class="prev" onclick="plusSlidesFood(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlidesFood(1)">&#10095;</a>
+                    <div class="caption-container"><p id="captionFood"></p></div>
+                    <div class="thumbnail-row">
+                        <img class="demoFood" src="images/Food Photography 1.jpg" onclick="currentSlideFood(1)" alt="Food 1">
+                        <img class="demoFood" src="images/Food Photography 2.jpg" onclick="currentSlideFood(2)" alt="Food 2">
+                        <img class="demoFood" src="images/Food Photography 3.jpg" onclick="currentSlideFood(3)" alt="Food 3">
+                        <img class="demoFood" src="images/Food Photography 14.jpg" onclick="currentSlideFood(4)" alt="Food 4">
+                    </div>
+                </div>
+            </div>
+
+            
             <div class="learn_more">
             <a href="contact us.html">Book with us</a>
             </div>
         </main>
-    
+        
+        <footer>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="Services.html">Services</a>
+                <a href="enquire.html">Enquire</a>
+                <a href="contact us.html">Contact Us</a>
+            </nav>
+                
+                <p>
+                    &copy;2025 Cathel Photography. All rights reserved 
+                </p>
+        
+        </footer>
         <script src="JScript.js"></script>
 </body>
 
 
-<footer>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="Services.html">Services</a>
-        <a href="enquire.html">Enquire</a>
-        <a href="contact us.html">Contact Us</a>
-    </nav>
-        
-        <p>
-            &copy;2025 Cathel Photography. All rights reserved 
-        </p>
 
-</footer>
 </html>
