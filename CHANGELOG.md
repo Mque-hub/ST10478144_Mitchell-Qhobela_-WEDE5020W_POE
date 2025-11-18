@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/compare/v1.2.0...v1.3.0) (2025-11-18)
+
+
+### Features
+
+* HTML, CSS, and JS code created for Lighbox. Lightbox now available ([dfdbf4c](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/commit/dfdbf4c6be993ae223970784da0212c7b4c1ce7c))
+
 ## [1.2.0](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/compare/v1.1.0...v1.2.0) (2025-11-16)
 
 
