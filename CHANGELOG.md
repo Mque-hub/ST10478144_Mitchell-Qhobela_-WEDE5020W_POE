@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/compare/v1.5.0...v1.5.1) (2025-11-19)
+
+
+### Bug Fixes
+
+* CSS Mobile responsiveness ([66b6071](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/commit/66b60712885704ca8039e309db49129b8abc368b))
+
 ## [1.5.0](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/compare/v1.4.0...v1.5.0) (2025-11-19)
 
 
