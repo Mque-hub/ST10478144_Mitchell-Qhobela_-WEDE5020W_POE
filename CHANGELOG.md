@@ -40,7 +40,7 @@ All notable changes to this project will be documented in this file. See [standa
 #Changelog
 ## [Unreleased]
 ##[1.0.0] - 2025-10-03
-###Added 
-- Css Code
+### Added 
+- Css Code for styling
 - More comments available in the code
 - Website Responsivness
