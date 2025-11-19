@@ -32,10 +32,11 @@ business offers
 All contact information, i.e., Email, telephone numbers, location etc.
 ## Part 1 and 2 Details
 - Basic HTML Code for the website,i.e., headers, navigations, body, images added etc.
-##### From Part 1 into 2, Changes Made
+##### From Part 1 into 2, Changes Made Based On Feedback
 - New website styling of the HTML code using CSS
 - Website Responsiveness
 - Added Comments.
+- Added details to Readme File
 ## Reference List
 - w3schools, 2025. HMTL <form> tag. [Online]. Available at: https://www.w3schools.com/tags/tag_form.asp [ Accessed 24 September 2025].
 - Leigh Benson Photography, 2025. Johannesburg Wedding and Portrait Photographer. [Online]. Available at: https://leighbensonphotography.com/ [ Accessed 24 September 2025].

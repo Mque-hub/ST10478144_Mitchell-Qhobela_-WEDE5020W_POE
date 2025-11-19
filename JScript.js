@@ -164,3 +164,90 @@ $(document).ready(function() {
     }
   });
 });
+
+// Form Validation & Submission Logic
+document.addEventListener('DOMContentLoaded', function () {
+
+  const form = document.getElementById('enquire-form') || document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submit-Buttn') || document.getElementById('submit-Btton');
+  const successMessage = document.getElementById('successMessage');
+
+  // ---- FORM VALIDATION FUNCTION ---- //
+  function validateForm() {
+    let isValid = true;
+
+    // Reset error messages
+    document.querySelectorAll('.error-message').forEach(error => {
+      error.style.display = 'none';
+    });
+
+    // Validate First Name
+    const firstName = document.getElementById('firstName');
+
+  if (!firstName.value.trim()) {
+      document.getElementById('firstNameError').style.display = 'block';
+      isValid = false;
+      }
+
+  
+
+    // Validate Last Name
+    const lastName = document.getElementById('lastName');
+    if (!lastName.value.trim()) {
+      document.getElementById('lastNameError').style.display = 'block';
+      isValid = false;
+    }
+
+    // Validate Email
+    const email = document.getElementById('email');
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!email.value.trim() || !emailRegex.test(email.value)) {
+      document.getElementById('emailError').style.display = 'block';
+      isValid = false;
+    }
+
+    // Validate Phone (optional but must be valid if filled)
+    const phone = document.getElementById('phone');
+    const phoneDigits = phone?.value.replace(/\D/g, '');
+
+    if (phone && phone.value.trim() && !/^\d{7,15}$/.test(phoneDigits)) {
+      document.getElementById('phoneError').style.display = 'block';
+      isValid = false;
+    }
+
+    // Validate Service Type (if present)
+    const serviceType = document.getElementById('serviceType');
+    if (serviceType && !serviceType.value.trim()) {
+      document.getElementById('serviceTypeError').style.display = 'block';
+      isValid = false;
+    }
+
+    // Validate Message
+    const message = document.getElementById('message');
+    if (!message.value.trim() || message.value.trim().length < 9) {
+      document.getElementById('messageError').style.display = 'block';
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  //  FORM SUBMISSION  //
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (validateForm()) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting, please wait...';
+
+        // Simulate submit
+        setTimeout(function () {
+          form.style.display = 'none';
+          successMessage.style.display = 'block';
+        }, 1500);
+      }
+    });
+  }
+});

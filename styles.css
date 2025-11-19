@@ -791,6 +791,155 @@ nav a:active
    margin-bottom: 40px ;
 }
 
+.form-container h1
+{
+
+    text-align: center;
+    font-family: arial;
+}
+
+.form-container p
+{
+    text-align: center;
+    font-family: arial;
+}
+
+/* enquiry form styling*/
+
+.enquireform {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    font-family: Arial;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.required::after {
+    content: " *";
+    color: #e63946;
+    font-weight: bold;
+}
+
+
+.enquireform input,
+.enquireform select,
+.enquireform textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1.6px solid #cccccc;
+    background: #fafafa;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+    font-family: arial;
+}
+
+.enquireform input:focus,
+.enquireform select:focus,
+.enquireform textarea:focus {
+    background: #fff;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.15);
+    outline: none;
+}
+
+
+textarea {
+    resize: none;
+}
+
+
+.error-message {
+    display: none;
+    margin-top: 6px;
+    color: #d90429;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px 20px;
+    margin-top: 5px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-item input {
+    width: 18px;
+    height: 18px;
+}
+
+
+.submit-Buttn {
+    width: 100%;
+    padding: 15px;
+    background: #0066ff;
+    color: white;
+    border: none;
+    font-size: 1.05rem;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.submit-Buttn:hover {
+    background: #004ecb;
+}
+
+.submit-Buttn:active {
+    transform: scale(0.97);
+}
+
+.submit-Buttn:disabled {
+    background: #9ba3b0;
+    cursor: not-allowed;
+}
+
+.success-message
+{
+    display: none;
+    text-align: center;
+    font-family: arial;
+}
+textarea {
+    padding: 12px 15px;
+    box-sizing: border-box;
+}
+
+
+
+
     /*The following Responsive web design for Enquire Page */
 
 @media (max-width:1024px) 
@@ -851,6 +1000,12 @@ nav a:active
     box-shadow: 2px 2px;
 }
 
+
+    .form-row {
+        flex-direction: column;
+    }
+
+
 }
 
         /*The following styling is for Contact Page*/
@@ -888,59 +1043,108 @@ nav a:active
     margin-left: 450px;
 }
 
-.form
-{
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background: whitesmoke ;
-    border: 1px solid;
-    border-radius: 5px;
-    font-family: sans-serif;
+/*Contact Form styling */
+.form {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    font-family: "Inter", Arial, sans-serif;
 }
 
-.form label
-{
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 100px;
-    color: black;
 
+.form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+    font-family: inherit;
+    background: #fafafa;
 }
 
 .form input:focus,
-.form textarea:focus
-{
-    border-color: red;
-
+.form textarea:focus {
+    border-color: #0077ff;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.15);
+    outline: none;
 }
 
-.form button
-{
+
+.form textarea {
+    height: 130px;
+    resize: none;
+}
+
+
+.error-message {
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 12px;
+    color: #d9534f;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+
+.submit-Btton {
     width: 100%;
-    padding: 12px;
-    background: lightgrey;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 10px;
-
+    padding: 14px;
+    background: #0077ff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.15s ease;
 }
 
-.form button:hover
-{
-    background: darkgray;
-
+.submit-Btton:hover {
+    background: #005fcc;
 }
 
-#FirstName
+.submit-Btton:active {
+    transform: scale(0.97);
+}
+
+.submit-Btton:disabled {
+    background: #a0a0a0;
+    cursor: not-allowed;
+}
+
+
+#formStatus {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #28a745;
+    text-align: center;
+}
+
+
+#firstName
 {
 
     height: 20px;
     width: 390px;
     margin-bottom: 10px;
 }
-#LastName
+#lastName
 {
     height: 20px;
     width: 390px;
@@ -1021,14 +1225,14 @@ nav a:active
         height: 300px;
     }
 
-    #FirstName
+    #firstName
     {
     
         height: 20px;
         width: 300px;
         margin-bottom: 10px;
     }
-    #LastName
+    #lastName
     {
         height: 20px;
         width: 300px;

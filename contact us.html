@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/Logo.jpg">
 
+    <meta name="keywords" content="Cathel, photography, Cathel Photography, portraits, food, products">
+    <meta name="discription" content="Cathel Photography Where we love capturing the beautiful and elegant moment, so that you may relive your favourite moments endlessly">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https//unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
@@ -63,23 +66,29 @@
         <h2>Send Us A Message</h2>
 
 
-        <form class="form" action="#" method="post">
+        <form class="form" id="contactForm" action="#" method="post">
 
-            <label for="FirstName">First Name</label>
-            <input type="text" id="FirstName" name="FirstName" placeholder="Enter your first name" required>
-
-            <label for="LastName">Surname</label>
-            <input type="text" id="LastName" name="LastName" placeholder="Enter your surname" required>
-
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            <div class="error-message" id="firstNameError">Please Enter Your First Name</div>
+        
+            <label for="lastName">Surname</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your surname" required>
+            <div class="error-message" id="lastNameError">Please Enter Your Last Name</div>
+        
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
+            <div class="error-message" id="emailError">Please Enter a Valid Email Address</div>
+        
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-
-            <button type="send">Send message</button>
-
+            <div class="error-message" id="messageError">Please Fill In The Message Box</div>
+        
+            <button type="submit" class="submit-Btton" id="submit-Btton">Send message</button>
+        
+            <div class="form-Status" id="formStatus"></div>
         </form>
+        
 
 
 

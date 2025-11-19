@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/Logo.jpg">
 
+    <meta name="keywords" content="Cathel, photography, Cathel Photography, portraits, food, products">
+    <meta name="discription" content="Cathel Photography Where we love capturing the beautiful and elegant moment, so that you may relive your favourite moments endlessly">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https//unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
@@ -42,29 +45,126 @@
                 <div class="bonus">
                 <img src="images/IMG_3272.jpg" alt="cathelphotography Portait Photo" >
                  </div>
-            
 
-            <div class="learn_more"> 
-            <a href="contact us.html">Book with us</a>
+                 <div class="learn_more"> 
+                    <a href="contact us.html">Book with us</a>
+                    </div>
+            
+            <!--Enquire form -->
+            
+    <div class="form-container">
+
+        <h1>Enquiry-Page</h1>
+        <p class="discription"> Are your interested in our services? Please fill in the following form or the contact form and we'll get back to you</p>
+
+        <div class="success-message" id="successMessage">
+            Thank you for your enquiry! We will get back to you shortly.
+        </div>
+        <form class="enquireform" id="enquire-form" novalidate>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName" class="required">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter Your Name">
+                    <div class="error-message" id="firstNameError">Please Enter Your First Name</div> 
+                </div>
+            
+                <div class="form-group">
+                    <label for="lastName" class="required"> Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name">
+                    <div class="error-message" id="lastNameError">Please Enter Your Last Name</div>
+                </div>
             </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email" class="required" >Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email Address">
+                    <div class="error-message" id="emailError">Please Enter a Valid Email Address</div>
+                </div>
+
+                
+                    <div class="form-group">
+                        <label for="phone" >Cellphone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number">
+                        <div class="error-message" id="phoneError">Please Enter a Valid Phone Number</div>
+                    </div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="serviceType" class="required"> Photography Service Type</label>
+                <select id="serviceType" name="serviceType">
+                    <option value=""> Select a Service Type</option>
+                    <option value="Event">Event Photography</option>
+                    <option value="Food">Food Photography</option>
+                    <option value="Product">Product Photography</option>
+                    <option value="Protrait">Portrait Photography</option>
+                </select>
+                    <div class="error-message" id="serviceTypeError">Please Select a Service</div>
+            </div>
+
+            <div class="form-group">
+                <label>Services Needed</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Servicenr1" name="services" value="family-portraits">
+                        <label for="Servicenr1"> Family Portraits</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Servicenr2" name="services" value="babyshower-portraits">
+                        <label for="Servicenr2"> Babyshower Portraits</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Servicenr3" name="services" value="Graduation-portraits">
+                        <label for="Servicenr3"> Graduation Portraits</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Servicenr4" name="services" value="MatricDance-portraits">
+                        <label for="Servicenr4"> Matric Dance Portraits</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Servicenr5" name="services" value="product">
+                        <label for="Servicenr5"> Products</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="Servicenr6" name="services" value="Food">
+                        <label for="Servicenr6"> Food </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="required">Details</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your desired outcomes"></textarea>
+                <div class="error-message" id="messageError">Please Fill In The Message Box</div>
+            </div>
+
+            <button type="submit" class="submit-Buttn" id="submit-Buttn">Submit Enquiry</button>
+        </form>
+    </div>       
      </main>
+
+     <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="enquire.html">Enquire</a>
+            <a href="contact us.html">Contact Us</a>
+        </nav>
+            
+            <p>
+                &copy;2025 Cathel Photography. All rights reserved 
+            </p>
+    
+    </footer>
     
      <script src="JScript.js"></script>
 </body>
-
-
-<footer>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="Services.html">Services</a>
-        <a href="enquire.html">Enquire</a>
-        <a href="contact us.html">Contact Us</a>
-    </nav>
-        
-        <p>
-            &copy;2025 Cathel Photography. All rights reserved 
-        </p>
-
-</footer>
 </html>
