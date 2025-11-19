@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/compare/v1.3.0...v1.4.0) (2025-11-19)
+
+
+### Features
+
+* Dynamic content and search feature, HTML, CSS, Js added ([b00e86a](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/commit/b00e86a879c7e1348b9f8f897730b19a5d261f02))
+
 ## [1.3.0](https://github.com/Mque-hub/ST10478144_Mitchell-Qhobela_-WEDE5020W_POE/compare/v1.2.0...v1.3.0) (2025-11-18)
 
 
