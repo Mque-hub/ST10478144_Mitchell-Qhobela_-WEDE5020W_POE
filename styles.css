@@ -263,6 +263,19 @@ nav a:active
     height: 450px;
    }
 
+   .title 
+{
+    position:absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 15px;
+  border-radius: 8px;
+
+}
    .Welcoming_message
    {
 
