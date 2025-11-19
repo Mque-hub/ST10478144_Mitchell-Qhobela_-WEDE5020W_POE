@@ -6,6 +6,13 @@
     <title>Cathel Photography | Services </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/Logo.jpg">
+
+    <meta name="keywords" content="Cathel, photography, Cathel Photography, portraits, food, products">
+    <meta name="discription" content="">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https//unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
 </head>
 
 <body>
@@ -29,6 +36,16 @@
         </header>
 
         <main class="Services Page">
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="service-search" placeholder="Search categories....(e.g., portraits, food, events)">
+                    <button id="clear-search" class="clear-btn">x</button>                    
+                </div>
+                <div
+                     id="search-results" class="search-results">
+                </div>
+            </div>
             <div class="content">
             <div class="content_pic">
                 <img src="images/IMG_2531.jpg" alt="Welcoming image of Portfolio" >
@@ -37,12 +54,19 @@
                 Our Portfolio
             </h2>
                 <p>
-                    We have some of our previous work for you to understandour motto and testimonies. we hope you love these artistic and beautiful pictures
+                    We have some of our previous work for you to understand our motto and testimonies. we hope you love these artistic and beautiful pictures
                 </p>
+
+
+
             
-            
+            <!--HTML code to accomodate the Lightbox feature-->
+
             <div class="main_content_pictures">
-                <h3>The Grace Foundation Christmas Charity Drive</h3>
+                <h3>
+                    The Grace Foundation Christmas Charity Drive
+                </h3>
+
                 <div class="gallery-row" id="christmas-gallery">
                     <div class="gallery-column"><img src="images/HCD Christmas Pic 1.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(1)"></div>
                     <div class="gallery-column"><img src="images/HCD Christmas Pic 2.jpg" alt="Grace Foundation Christmas Charity Drive" onclick="openModalTGF();currentSlideTGF(2)"></div>
@@ -55,7 +79,9 @@
                 </div>
             
                 <!-- Portraits Gallery -->
-                <h3>Portraits</h3>
+                <h3>
+                    Portraits
+                </h3>
                 <div class="gallery-row" id="portraits-gallery">
                     <div class="gallery-column"><img src="images/5 Stardagger pic 1.jpg" alt="Portrait 1" onclick="openModalPortrait();currentSlidePortrait(1)"></div>
                     <div class="gallery-column"><img src="images/5 Stardagger pic 2.png" alt="Portrait 2" onclick="openModalPortrait();currentSlidePortrait(2)"></div>

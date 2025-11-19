@@ -102,3 +102,65 @@ function currentSlideFood(n)
 {
   FoodGallery.current(n);
 }
+
+//Search Function
+
+$(document).ready(function() {
+  const $searchInput = $('#service-search');
+  const $clearButton = $('#clear-search');
+  const $results = $('#search-results');
+  const $servCards = $('.card-1');
+
+  function performSearch() {
+    const searchTerm = $searchInput.val().toLowerCase().trim();
+
+    if (searchTerm === '') {
+      $results.html('');
+      $servCards.show();
+      return;
+    }
+
+    let foundCount = 0;
+    $servCards.hide();
+
+    $servCards.each(function() {
+      const $card = $(this);
+      const servName = $card.find('h2').text().toLowerCase();
+      const servContent = $card.find('p').text().toLowerCase();
+      const servData = $card.data('service');
+
+      if (
+        servName.includes(searchTerm) ||
+        servContent.includes(searchTerm) ||
+        (servData && servData.toLowerCase().includes(searchTerm))
+      ) {
+        $card.show();
+        foundCount++;
+      }
+    });
+
+    if (foundCount === 0) {
+      $results.html('<p class="no-results">No services found matching "' + searchTerm + '"</p>');
+    } else {
+      $results.html('<p class="results-found">Found ' + foundCount + ' service(s) matching "' + searchTerm + '"</p>');
+    }
+  }
+
+  // Event listeners
+  $searchInput.on('input', performSearch);
+
+  $clearButton.on('click', function() {
+    $searchInput.val('');
+    $results.html('');
+    $servCards.show();
+    $searchInput.focus();
+  });
+
+  $searchInput.on('keydown', function(e) {
+    if (e.key === 'Escape') {
+      $searchInput.val('');
+      $results.html('');
+      $servCards.show();
+    }
+  });
+});
